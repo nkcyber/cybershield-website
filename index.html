@@ -42,6 +42,32 @@
   <!-- Header Section End -->
 
   <style>
+    .action-button {
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 1.7em;
+    }
+
+    .cyber-list li {
+      list-style: disclosure-closed;
+      margin-left: 2em;
+    }
+
+    .cyber-prose {
+      color: white;
+      font-size: 1.65em;
+      line-height: 1.5em;
+    }
+
+    .cyber-prose a {
+      text-decoration: underline;
+    }
+
+    h5 {
+      font-size: 1.9em;
+      line-height: 2em;
+    }
+
     .gradient-text {
       background: linear-gradient(45deg, #616199, #264176, #4D76BD, #428966);
       -webkit-background-clip: text;
@@ -50,6 +76,18 @@
 
     #title-name {
       font-weight: bolder;
+    }
+
+    /* You can adjust the size further for very small screens */
+    @media (max-width: 576px) {
+      #title-name {
+        font-size: 13.5vw;
+        /* Adjust to make it bigger on smaller screens, but avoid overflow */
+      }
+
+      #subtitle-slogan {
+        font-size: 10vw;
+      }
     }
 
     .larger-prose {
@@ -62,13 +100,17 @@
 
   <section class="section mt-4">
     <h1 class="display-3 fw-bolder text-center" id="title-name">CyberShield</h1>
-    <h2 class="gradient-text text-dark text-center">Capture the Flag</h2>
-  </section>
+    <h2 class="gradient-text text-dark text-center" id="subtitle-slogan">Capture the Flag</h2>
 
-  <!-- Join section -->
-  <section id="time" class="section" style="background-color: #4D76BD">
+    <div class="text-center mt-4">
+      <a href="https://example.com" target="_blank" class="btn px-5 py-3 shadow-lg btn-danger text-white action-button">
+        Sign up now!
+      </a>
+    </div>
+
+
     <div class="container">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center mt-4">
         <div class="card shadow">
           <div class="card-body bg-primary text-white p-4">
             <table class="table table-borderless text-white">
@@ -83,103 +125,98 @@
                 </tr>
                 <tr>
                   <td class="p-3 text-white larger-prose"><i class="fas fa-map-marker-alt"></i></td>
-                  <td class="p-3 text-white larger-prose">Griffin Hall, NKU</td>
+                  <td class="p-3 text-white larger-prose">
+                    <u>
+
+                      <a href="https://maps.app.goo.gl/QuvY9MnFZMQNgCTP8" target="_blank" rel="noopener noreferrer"
+                        class="text-white">
+                        Griffin Hall, NKU
+                      </a>
+                    </u>
+                  </td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
       </div>
-    </div>
-
   </section>
 
-
-  <!-- Branches Section Start -->
-  <section id="Branches" class="section">
-
-  </section>
-
-  <!-- CST Section -->
-  <section id="CST" class="section" style="background-color: #336699;">
-    <!-- Container Starts -->
-    <div class="container" style="color: #ffffff;">
-      <div class="section-header" style="color: #ffffff;">
-        <h2 class="section-title" style="color: #ffffff;">Cyber Security Training</h2>
-        <p class="section-subtitle" style="color: #ffffff;">Dive into the world of cyber security with our student-led
-          Cyber Security Training (CST). Explore a spectrum of topics, from defense strategies to red team exercises.
-          Ideal for passionate students, our CST community bridges expertise across generations, fostering a dynamic
-          environment where learning and fun converge. Embark on an exciting journey that demystifies cyber security
-          while creating lasting connections with like-minded peers.</p>
-      </div>
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-xs-12 blog-item">
-          <!-- IMG Item Starts -->
-          <div class="blog-item-wrapper text-center">
-            <div class="blog-item-img">
-              <img src="/img/Actual_Imgs/CST_STUFF.png" style="max-height:250px; max-width: 90%; " alt="">
-            </div>
-          </div>
-          <!-- IMG Item Wrapper Ends-->
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- blog Section End -->
-
-  <!-- RND Section -->
-  <section id="RND" class="section">
-    <!-- Container Starts -->
+  <!-- Join section -->
+  <section id="time" class="section" style="background-color: #4D76BD">
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Research and Development</h2>
-        <p class="section-subtitle">Unleash your potential within our R&D branch, where computer science and cyber
-          security intertwine seamlessly. We drive innovation through impactful projects that enrich both the club and
-          its members. Join our close-knit community of collaborators, where the fusion of sharing knowledge and honing
-          coding prowess come together effortlessly. Discover the transformative power of coding with us.</p>
+      <h2 class="text-white mb-4">
+        What is CyberShield?
+      </h2>
+      <p class="cyber-prose mb-3">
+        CyberShield is an exciting Capture The Flag (CTF) event designed for high schoolers to hone their technical
+        skills in a hands-on cybersecurity environment.
+      </p>
+      <p class="cyber-prose mb-3">
+        Participants will dive into a series of challenging tasks, including Linux commands, binary disassembly,
+        cryptology, packet capture analysis, and more. The event will take place on April 12th from 10 AM to 3 PM at the
+        Griffin Hall Digitorium.
+      </p>
+      <p class="cyber-prose">
+        Whether you're new to cybersecurity or looking to level up your skills,
+        CyberShield offers a unique, immersive experience with expert guidance and the chance to tackle real-world
+        cybersecurity challenges. Don’t miss out on this awesome opportunity to challenge yourself and grow your
+        technical expertise!
+      </p>
+    </div>
+
+  </section>
+
+  <section id="faq">
+    <div class="container mt-5">
+      <h2>
+        FAQ
+      </h2>
+      <h5>How much does it cost?</h5>
+      <p class="cyber-prose text-dark mb-3">
+        CyberShield is <strong>FREE</strong> for all students.
+      </p>
+      <h5>What will I learn about?</h5>
+      <div class="mb-3">
+        <ul class="cyber-list">
+          <li class="cyber-prose text-dark">Python Scripting</li>
+          <li class="cyber-prose text-dark">Binary Decompilation</li>
+          <li class="cyber-prose text-dark">Packet Capture Analysis</li>
+          <li class="cyber-prose text-dark">Cryptology</li>
+          <li class="cyber-prose text-dark">Open-source intelligence</li>
+          <li class="cyber-prose text-dark">Steganography</li>
+          <li class="cyber-prose text-dark">And more!</li>
+        </ul>
       </div>
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-xs-12 blog-item">
-          <!-- IMG Item Starts -->
-          <div class="blog-item-wrapper text-center">
-            <div class="blog-item-img">
-              <img src="/img/Actual_Imgs/RND_FILL.png" style="max-height:250px;  max-width: 90%; " alt="">
-            </div>
-          </div>
-          <!-- IMG Item Wrapper Ends-->
-        </div>
-      </div>
+      <h5>Will there be food?</h5>
+      <p class="cyber-prose text-dark mb-3">
+        Yes! Lunch will be provided. Please indicate any dietary restrictions in the sign-up form.
+      </p>
+      <h5>Where should I park?</h5>
+      <p class="cyber-prose text-dark mb-3">
+        We recommend that students are dropped off in the <a href="https://maps.app.goo.gl/DTcMDsibh4ex5bgQ6">circle by
+          Griffin Hall</a>.
+      </p>
+      <p class="cyber-prose text-dark mb-3">
+        You may also park in the <a href="https://maps.app.goo.gl/Ak6WB1QMEYhyxF9LA">Kenton Drive Garage</a>.
+        Rates may be found on <a href="https://inside.nku.edu/parking/visit.html">NKU's website</a>.
+      </p>
+      <h5>Who made this event?</h5>
+      <p class="cyber-prose text-dark mb-3">
+        This event was created by NKU's student-led cybersecurity team <a href="https://www.nkcyber.org">NKCyber</a>,
+        with generous support from NKU's <a href="https://www.nku.edu/academics/informatics.html">College of
+          Informatics</a>.
+      </p>
     </div>
   </section>
-  <!-- blog Section End -->
 
-
-  <!-- Build Team Hacking Section -->
-  <section id="Build" class="section" style="background-color: #5b5b5b;">
-    <!-- Container Starts -->
-    <div class="container">
-      <div class="section-header" style="color: #ffffff;">
-        <h2 class="section-title" style="color: #ffffff;">Build Team</h2>
-        <p class="section-subtitle" style="color: #ffffff;">Embark on infrastructure, networking, and DevOps journey
-          with the Build Team. Ensuring seamless operations, teaching secure server setups, and fostering hands-on
-          learning. Join our community for empowerment and camaraderie, unveiling the backbone of our cyber journey.
-          Here, practical expertise and collaborative spirit fuel your tech aspirations.</p>
-      </div>
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-xs-12 blog-item">
-          <!-- IMG Item Starts -->
-          <div class="blog-item-wrapper text-center">
-            <div class="blog-item-img">
-              <img src="/img/Actual_Imgs/BUILD_STUFF.png" style="max-height:250px;  max-width: 90%; " alt="">
-            </div>
-          </div>
-          <!-- IMG Item Wrapper Ends-->
-        </div>
-      </div>
+  <section>
+    <div class="container text-center mt-5">
+      <a href="https://example.com" target="_blank" class="btn px-5 py-3 shadow-lg btn-danger text-white action-button">
+        Sign up now!
+      </a>
     </div>
   </section>
-  <!-- blog Section End -->
-
 
   <!-- Footer Section Start -->
   <footer>
@@ -189,47 +226,11 @@
       <div class="container">
         <div class="row">
           <div class="col-4">
-            <h3>NKCyber</h3>
-            <div class="textwidget">
-              <p style="color: RED; font-weight: bolder;">THIS IS THE FLAG/KEYWORD: H@CKER</p>
-            </div>
             <ul class="footer-social">
               <li><a class="Github" href="https://github.com/nkcyber"><i class="lni-github"></i></a></li>
               <li><a class="Instagram" href="https://www.instagram.com/nkcyber_social/"><i
                     class="lni-instagram"></i></a></li>
             </ul>
-          </div>
-          <div class="col-4">
-            <div class="widget">
-              <h3 class="block-title">Short Link</h3>
-              <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#Branches">Branches</a></li>
-                <li><a href="#CST">CST</a></li>
-                <li><a href="#RND">R&D</a></li>
-                <li><a href="#Build">Build Team</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="widget">
-              <h3 class="block-title">Meeting Times</h3>
-              <ul class="contact-footer">
-                <li>
-                  <strong>Cyber Security Training :</strong>
-                  <p><br> Fridays at 6 P.M. in GH 224</p>
-                </li>
-                <li>
-                  <strong>Research & Development :</strong>
-                  <p>TBD</p>
-                </li>
-                <li>
-                  <strong>Build Team :</strong>
-                  <p><br> TBD </p>
-                  </p>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
