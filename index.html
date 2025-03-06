@@ -10,16 +10,12 @@
   <meta name="author" content="Grayrids">
   <title>NKCyber Club</title>
   <link rel="icon" href="img/Actual_Imgs/mk.png">
-  <script
-			src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
-			integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
-			crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
   <script>
-    $(function(){
+    $(function () {
       $("#navbar").load("sections/header.html");
-      $("#carousel-area").load("sections/carousel.html");
-      $("#join").load("sections/join.html");
-      $("#Branches").load("sections/branches.html");
     });
   </script>
 
@@ -35,8 +31,6 @@
   <link rel="stylesheet" href="css/menu_sideslide.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/responsive.css">
-
-
 </head>
 
 <body>
@@ -44,24 +38,66 @@
   <header id="slider-area">
     <nav id="navbar" class="navbar navbar-expand-md fixed-top scrolling-navbar bg-white">
     </nav>
-
-    <h2>TEST CyberShield</h2>
-
-    <!-- Main Carousel Section -->
-    <div id="carousel-area">
-    </div>
-
   </header>
   <!-- Header Section End -->
 
+  <style>
+    .gradient-text {
+      background: linear-gradient(45deg, #616199, #264176, #4D76BD, #428966);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    #title-name {
+      font-weight: bolder;
+    }
+
+    .larger-prose {
+      font-size: 2em;
+      line-height: 1.5em;
+    }
+  </style>
+
+  <br>
+
+  <section class="section mt-4">
+    <h1 class="display-3 fw-bolder text-center" id="title-name">CyberShield</h1>
+    <h2 class="gradient-text text-dark text-center">Capture the Flag</h2>
+  </section>
+
   <!-- Join section -->
-  <section id="join" class="section" style="background-color: #4D76BD">
+  <section id="time" class="section" style="background-color: #4D76BD">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="card shadow">
+          <div class="card-body bg-primary text-white p-4">
+            <table class="table table-borderless text-white">
+              <tbody>
+                <tr>
+                  <td class="p-3 text-white larger-prose"><i class="fas fa-calendar-alt"></i></td>
+                  <td class="p-3 text-white larger-prose">April 12th, 2025</td>
+                </tr>
+                <tr>
+                  <td class="p-3 text-white larger-prose"><i class="fas fa-clock"></i></td>
+                  <td class="p-3 text-white larger-prose">10 AM - 3 PM</td>
+                </tr>
+                <tr>
+                  <td class="p-3 text-white larger-prose"><i class="fas fa-map-marker-alt"></i></td>
+                  <td class="p-3 text-white larger-prose">Griffin Hall, NKU</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
 
   <!-- Branches Section Start -->
   <section id="Branches" class="section">
-    
+
   </section>
 
   <!-- CST Section -->
