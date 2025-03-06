@@ -8,7 +8,7 @@
   <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="author" content="Grayrids">
-  <title>NKCyber Club</title>
+  <title>CyberShield - NKCyber</title>
   <link rel="icon" href="img/Actual_Imgs/mk.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
@@ -74,13 +74,13 @@
       -webkit-text-fill-color: transparent;
     }
 
-    #title-name {
+    .title-name {
       font-weight: bolder;
     }
 
     /* You can adjust the size further for very small screens */
     @media (max-width: 576px) {
-      #title-name {
+      .title-name {
         font-size: 13.5vw;
         /* Adjust to make it bigger on smaller screens, but avoid overflow */
       }
@@ -94,13 +94,41 @@
       font-size: 2em;
       line-height: 1.5em;
     }
+
+    /* Particles.js */
+    #particles-js canvas {
+      display: block;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+      -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+      transition: opacity .8s ease, transform 1.4s ease
+    }
+
+    #particles-js {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      z-index: -10;
+      top: 0;
+      left: 0
+    }
+
+    .title-area {
+      background-color: RGBA(255, 255, 255, .5);
+    }
   </style>
 
   <br>
 
   <section class="section mt-4">
-    <h1 class="display-3 fw-bolder text-center" id="title-name">CyberShield</h1>
-    <h2 class="gradient-text text-dark text-center" id="subtitle-slogan">Capture the Flag</h2>
+    <div id="particles-js"></div>
+
+    <div class="title-area">
+      <h1 class="display-3 fw-bolder text-center title-name">CyberShield</h1>
+      <h2 class="gradient-text text-dark text-center" id="subtitle-slogan">Capture the Flag</h2>
+    </div>
 
     <div class="text-center mt-4">
       <a href="https://example.com" target="_blank" class="btn px-5 py-3 shadow-lg btn-danger text-white action-button">
@@ -167,7 +195,7 @@
 
   </section>
 
-  <section id="faq">
+  <section id="faq" class="section" style="background-color: white;">
     <div class="container mt-5">
       <h2>
         FAQ
@@ -226,6 +254,10 @@
         This event was created by NKU's student-led cybersecurity team <a href="https://www.nkcyber.org">NKCyber</a>,
         with generous support from NKU's <a href="https://www.nku.edu/academics/informatics.html">College of
           Informatics</a>.
+      </p>
+      <h5>How old is CyberShield?</h5>
+      <p class="cyber-prose text-dark mb-3">
+        This is the 4<sup>th</sup> annual CyberShield competition!
       </p>
     </div>
   </section>
@@ -294,6 +326,13 @@
   <script src="js/form-validator.min.js"></script>
   <script src="js/contact-form-script.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script>
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load('particles-js', 'assets/particles.json', function () {
+      console.log('callback - particles.js config loaded');
+    });
+  </script>
 
 </body>
 
