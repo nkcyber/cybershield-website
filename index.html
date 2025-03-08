@@ -130,6 +130,19 @@
     pre {
       font-size: 1.2em;
     }
+
+    #agenda {
+      font-size: 1.5em;
+    }
+
+    #agenda .agenda-title {
+      font-size: 1.7em;
+      font-weight: bold;
+    }
+
+    .balanced-wrap {
+      text-wrap: balance;
+    }
   </style>
 
   <br>
@@ -209,50 +222,59 @@
 
   </section>
 
-  <section id="agenda" class="section" style="background-color: #616199">
-    <div class="d-flex  justify-content-center">
-      <ul>
-        <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
-          <h2 class="text-white mb-4"> Agenda:</h2>
-        </li>
-        <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
-          <h2 class="text-white mb-4"> Saturday, April 12th</h2>
-        </li>
 
-
-        <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
-          <p class="cyber-prose mb-2">09:00 - 10:00 - Arrive</p>
-        </li>
-
-        <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
-          <p class="cyber-prose mb-3">10:00 - 10:15 - Introductions and Opening remarks</p>
-        </li>
-
-        <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
-          <p class="cyber-prose mb-3">10:30 - 12:30 - Event Start/Flag Drops</p>
-        </li>
-        <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
-          <p class="cyber-prose mb-3"> 12:30 - 01:30 - Lunch</p>
-        </li>
-
-        <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
-          <p class="cyber-prose mb-3"> 01:30 - 03:30 - Event Continues</p>
-        </li>
-
-        <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
-          <p class="cyber-prose mb-1"> 04:00 - 04:30 - Results and Awards</p>
-        </li>
-      </ul>
-    </div>
+  <section id="agenda" class="section py-5" style="background-color: #616199;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <table class="table table-borderless text-white" style="border-collapse: collapse; text-align: left;">
+            <thead>
+              <tr>
+                <th colspan="2" class="agenda-title"> Agenda </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th colspan="2" class="py-2 fs-5" class="agenda-date">Saturday, April 12th</th>
+              </tr>
+              <tr>
+                <td class="py-2">09:00 - 10:00</td>
+                <td class="py-2">Arrive</td>
+              </tr>
+              <tr>
+                <td class="py-2">10:00 - 10:15</td>
+                <td class="py-2">Introductions and Opening Remarks</td>
+              </tr>
+              <tr>
+                <td class="py-2">10:30 - 12:30</td>
+                <td class="py-2">Event Start / Flag Drops</td>
+              </tr>
+              <tr>
+                <td class="py-2">12:30 - 01:30</td>
+                <td class="py-2">Lunch</td>
+              </tr>
+              <tr>
+                <td class="py-2">01:30 - 03:30</td>
+                <td class="py-2">Event Continues</td>
+              </tr>
+              <tr>
+                <td class="py-2">04:00 - 04:30</td>
+                <td class="py-2">Results and Awards</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   </section>
+
 
 
   <section id="faq" style="background-color: white;">
     <div class="container text-center pt-5 pb-5">
       <p class="cyber-prose text-dark">
         <strong>
-          <a href="/practice.html" class="btn px-5 py-3 shadow-lg btn-success text-white practice-button">
+          <a href="/practice.html" class="btn px-5 py-3 shadow-lg btn-success text-white practice-button balanced-wrap">
             Practice for the event here!
           </a>
         </strong>
@@ -400,8 +422,6 @@ Highland Heights, KY 41099
       </p>
     </div>
   </section>
-
-
 
   <section>
     <div class="container text-center mt-5">
