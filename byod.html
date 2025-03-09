@@ -124,50 +124,78 @@
         Devices will be provided but we welcome students to bring their own hardware, if desired.
       </div>
       <div class="cyber-prose text-dark mb-3">
+        It may take some extra time to set up, but then you'll have cybersecurity tools ready to go for the future.
+      </div>
+      <div class="cyber-prose text-dark mb-3">
         If you want to bring your own device make sure it has the following software:
       </div>
       <div>
         <div class="mb-3">
           <ul class="cyber-list">
             <li class="cyber-prose text-dark">
-              A Kali Box <a target="_blank"
-                href="https://phoenixnap.com/kb/how-to-install-kali-linux-on-virtualbox">(Setup Guide for Kali VM)
-            </li></a>
+              A Kali Virtual Machine <strong><a target="_blank"
+                  href="https://phoenixnap.com/kb/how-to-install-kali-linux-on-virtualbox">(Setup Guide for Kali VM)
+                </a></strong>
+            </li>
             <ul class="ml-5">
               <li class="cyber-prose text-dark">
-                Python 3
+                <a href="https://ghidra-sre.org/" target="_blank" rel="noopener noreferrer">Ghidra</a>
               </li>
               <li class="cyber-prose text-dark">
-                Python 3 PIL
+                <a href="https://www.kali.org/tools/wireshark/#wireshark" target="_blank"
+                  rel="noopener noreferrer">Wireshark</a>
               </li>
               <li class="cyber-prose text-dark">
-                Python3 Pip
+                <a href="https://www.kali.org/tools/hashcat/" target="_blank" rel="noopener noreferrer">HashCat</a>
               </li>
               <li class="cyber-prose text-dark">
-                Python3 pwntools
+                <a href="https://phoenixnap.com/kb/nc-command" target="_blank" rel="noopener noreferrer">NetCat</a>
+                (should come with Kali)
               </li>
               <li class="cyber-prose text-dark">
-                Ghidra
+                <a href="https://code.visualstudio.com/docs/setup/linux" target="_blank"
+                  rel="noopener noreferrer">VSCode</a>
+                (or text editor of choice)
               </li>
               <li class="cyber-prose text-dark">
-                NetCat
+                A web browser of your preference
               </li>
               <li class="cyber-prose text-dark">
-                Wireshark
+                Python 3 (should come with Kali)
               </li>
-              <li class="cyber-prose text-dark">
-                VS Code
-              </li>
-              <li class="cyber-prose text-dark">
-                Python3 pycryptodome
-              </li>
-              <li class="cyber-prose text-dark">
-                Git
-              </li>
+              <ul class="ml-5">
+                <li class="cyber-prose text-dark">
+                  Python 3
+                  <a href="https://www.kali.org/tools/python-pip/" target="_blank" rel="noopener noreferrer">
+                    pip
+                  </a>
+                </li>
+                <li class="cyber-prose text-dark">
+                  Python 3 <a href="https://pypi.org/project/pillow/" target="_blank" rel="noopener noreferrer">pillow
+                    11.1.0</a>
+                </li>
+                <li class="cyber-prose text-dark">
+                  Python 3 <a href="https://pypi.org/project/pwntools/" target="_blank"
+                    rel="noopener noreferrer">pwntools
+                    4.14.0</a>
+                </li>
+                <li class="cyber-prose text-dark">
+                  Python 3 <a href="https://pypi.org/project/pycryptodome/" target="_blank"
+                    rel="noopener noreferrer">pycryptodome 3.21.0</a>
+                </li>
+              </ul>
             </ul>
           </ul>
         </div>
         <hr />
+        <div class="cyber-prose text-dark mb-3">
+          <strong>Note:</strong>
+          Outside of a virtual environment, the Python dependencies may need to be installed via
+          <code>apt</code> and not <code>pip</code>.
+        </div>
+        <div class="cyber-prose text-dark mb-3">
+          That is, <code>sudo apt install python3-pwntools</code>, instead of <code>pip3 install pwntools</code>.
+        </div>
       </div>
     </div>
   </section>
